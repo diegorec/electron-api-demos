@@ -24,6 +24,17 @@
     "empaquetar": "electron-builder --dir",
     "distribuir": "electron-builder"
   },
+  "build": {
+    "appId": "your.id",
+    "directories": {
+      "output": "instaladores",
+      "app": "./"
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "assets/icons/win/icon.ico"
+    }
+  },
   "repository": "https://github.com/electron/electron-api-demos",
   "keywords": [
     "Electron",
